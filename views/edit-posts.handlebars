@@ -4,11 +4,9 @@
     Edit Post
   </h2>
   <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" size="60" value="{{post.title}}" />
-    </div>
-    <div>
-      <textarea name="post-text" type="text">{{post.post_text}}</textarea>
+    <div class="mb-3">
+      <input name="post-title" class="form-control" type="text" size="60" value="{{post.title}}" />
+      <textarea name="post-text" class="form-control" rows="3" type="text">{{post.post_text}}</textarea>
     </div>
     <div>
     <button type="submit btn-secondary">Save Post</button>
@@ -18,12 +16,9 @@
 </article>
 
 <form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit" class="btn-secondary">Add Comment</button>
+  <div class="mb-3">
+    <textarea name="comment-body" class="form-control" rows="3"></textarea>
+    <button type="submit" class="btn btn-secondary">Add Comment</button>
   </div>
 </form>
 
